@@ -16,6 +16,9 @@
   "icon": "assets/biomesoplenty/textures/item/bop_icon.png",
   "environment": "*",
   "entrypoints": {
+    "main": [
+      "biomesoplenty.fabric.core.BiomesOPlentyFabric"
+    ],
     "glitchcore": [
       "biomesoplenty.fabric.core.BiomesOPlentyFabric"
     ],

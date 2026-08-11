@@ -8,9 +8,10 @@ import biomesoplenty.core.BiomesOPlenty;
 import biomesoplenty.fabric.init.ModClientFabric;
 import biomesoplenty.init.ModClient;
 import glitchcore.fabric.GlitchCoreInitializer;
+import net.fabricmc.api.ModInitializer;
 import terrablender.api.TerraBlenderApi;
 
-public class BiomesOPlentyFabric implements GlitchCoreInitializer, TerraBlenderApi
+public class BiomesOPlentyFabric implements ModInitializer, GlitchCoreInitializer, TerraBlenderApi
 {
     @Override
     public void onInitialize()

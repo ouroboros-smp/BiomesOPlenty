@@ -15,13 +15,19 @@ import net.minecraft.core.registries.Registries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.concurrent.atomic.AtomicBoolean;
+
 public class BiomesOPlenty
 {
     public static final String MOD_ID = BOPAPI.MOD_ID;
     public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
+    private static final AtomicBoolean INITIALIZED = new AtomicBoolean();
 
     public static void init()
     {
+        if (!INITIALIZED.compareAndSet(false, true))
+            return;
+
         // Initialize the config file first so other things can rely on it
         ModConfig.setup();
 
