@@ -25,6 +25,11 @@ public class BiomesOPlenty
 
     public static void init()
     {
+        init(true);
+    }
+
+    public static void init(boolean useGlitchCoreRegistrars)
+    {
         if (!INITIALIZED.compareAndSet(false, true))
             return;
 
@@ -33,7 +38,8 @@ public class BiomesOPlenty
 
         ModBiomes.setup();
         ModTags.setup();
-        addRegistrars();
+        if (useGlitchCoreRegistrars)
+            addRegistrars();
         addHandlers();
 
         ModLegacy.setupBiomes();

@@ -19,7 +19,7 @@
     "main": [
       "biomesoplenty.fabric.core.BiomesOPlentyFabric"
     ],
-    "glitchcore": [
+    "client": [
       "biomesoplenty.fabric.core.BiomesOPlentyFabric"
     ],
     "terrablender": [
