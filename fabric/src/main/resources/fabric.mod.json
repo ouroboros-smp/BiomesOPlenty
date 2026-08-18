@@ -16,7 +16,13 @@
   "icon": "assets/biomesoplenty/textures/item/bop_icon.png",
   "environment": "*",
   "entrypoints": {
-    "glitchcore": [
+    "main": [
+      "biomesoplenty.fabric.core.BiomesOPlentyFabric"
+    ],
+    "client": [
+      "biomesoplenty.fabric.core.BiomesOPlentyFabric"
+    ],
+    "dtbop-bootstrap": [
       "biomesoplenty.fabric.core.BiomesOPlentyFabric"
     ],
     "terrablender": [
